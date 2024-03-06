@@ -230,6 +230,35 @@ do {
 let n = 10;
 nextPrime:
  for (let i = 2; i <= n; i++) {
-for (let j = 2; j < i; j++) {
-if (i % j == 0) continue nextPrime;{
+for (let a = 2; j < i; a++) {
+if (i % a == 0) continue nextPrime;{
 alert( i );}
+
+
+    //Напишите if..else, соответствующий следующему switch:
+    if(browser == "Edge") {
+        alert("You've got the Edge!");
+    } else if (browser == "Chrome"
+        || browser == 'Firefox'
+        || browser == 'Safari'
+        || browser == 'Opera') {
+        alert( "Okay we support these browsers too" );
+    } else {
+        alert( 'We hope that this page looks ok!' );
+    }
+
+    //Перепишите код с использованием одной конструкции switch:
+
+    const number = +prompt('Введите число между 0 и 3');
+    switch (number){
+        case 0:
+            alert('Вы ввели число 0');
+            break;
+        case 1:
+            alert('Вы ввели число 1');
+            break;
+        case 2:
+        case 3:
+            alert('Вы ввели число 2, а может и 3');
+            break;
+    }

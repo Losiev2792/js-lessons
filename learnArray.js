@@ -284,3 +284,17 @@ alert( i );}
     let users = [ vasya, petya, masha ];
     let nameU =users.map(item=> item.name)
     console.log(nameU);
+
+
+    // arrowFunction
+
+    function ask(question, yes, no) {
+        if (confirm(question)) yes()
+        else no();
+    }
+
+    ask(
+        "Вы согласны?",
+        () => { alert("Вы согласились."); },
+        () => { alert("Вы отменили выполнение."); }
+    );

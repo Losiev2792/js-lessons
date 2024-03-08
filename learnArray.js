@@ -317,11 +317,7 @@ alert( i );}
     let x = prompt("x?", "");
     let n = prompt("n?", "");
 
-    if (n <= 0) {
-        alert(`Степень ${n} не поддерживается,
-    введите целую степень, большую 0`);
-    } else {
-        alert( pow(x, n) );``
+    if (n <= 0) {3
 
 
         //Создайте пустой объект user.
@@ -407,3 +403,6 @@ menu = {
                 if (typeof obj[key] == 'number') {
                     obj[key] *= 2;
                 }}}
+
+
+
